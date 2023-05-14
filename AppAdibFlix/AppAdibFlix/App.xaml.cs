@@ -13,7 +13,15 @@ namespace AppAdibFlix
 
             //MainPage = new MainPage();
             MainPage = new NavigationPage(new MainPage());
-	    //NavigationPage: permite trocar de pagina
+            /**
+             * No appEtecFlix vamos exercitar a navegação entre telas, para isso
+             * vamos iniciar um nobo objeto chamado NavigationPage e definir aqui 
+             * que a página inicial do nosso app será MainPage. Este objeto nos
+             * dará acesso os recursos de navegação entre telas que veremos mais 
+             * a frente. Nunca se esqueça de inicial este objeto se seu App tera
+             * mais de uma tela.
+             * NavigationPage: permite trocar de pagina
+             */
         }
 
         protected override void OnStart()

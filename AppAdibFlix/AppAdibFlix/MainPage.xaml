@@ -9,14 +9,18 @@
 	
     <StackLayout>
         
-		
+		<!--
+        Para colocar imagens na pasta Img, alteramos as propriedades para Recurso
+        Inserido e copiar se for mais novo
+        -->
+        
 		<Image x:Name="logo" HeightRequest="150" />
 		
 		
 		
 		<ScrollView>
 		
-			<Grid RowSpacing="20" ColumnSpacing="10" Padding="10">
+			<Grid RowSpacing="25" ColumnSpacing="10" Padding="10">
 			
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="*"/>

@@ -15,13 +15,20 @@ namespace AppAdibFlix
         public MainPage()
         {
             InitializeComponent();
-
+            //Aqui estamos apontando o endereço da imagem
             logo.Source = ImageSource.FromResource("AppAdibFlix.Img.lucasflix.png");
-
+            //Linha d ecódigo abaixo desabilita a barra no topo da tela(onde fica as notificações)
 			NavigationPage.SetHasNavigationBar(this, false);	
 		}
-		
-		private async void Btn_Open_Aventura(object sender, EventArgs e)
+
+        /**
+         * Este é o método responsável por trocar para a tela de Aventura. Veja que colocamos
+         * a notação async. Isso acontece porque temos que esperar a outra tela responder. Observe
+         * que o Navigation.PushAsync tem a notação await antes, que determina que o App deve esperar
+         * a outra tela responder para dar seguimento.
+         * 
+         */
+        private async void Btn_Open_Aventura(object sender, EventArgs e)
         {
             try
             {
